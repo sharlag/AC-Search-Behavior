@@ -1,0 +1,199 @@
+
+<style>
+  .brief { padding: 1.5rem 0; font-size: 14px; color: var(--color-text-primary); }
+  .section-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-tertiary); margin: 0 0 12px; }
+  .source-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 10px; }
+  .source-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .source-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+  .source-meta { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; }
+  .badge { font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); white-space: nowrap; flex-shrink: 0; }
+  .badge-confirm { background: #EAF3DE; color: #27500A; }
+  .badge-nuance { background: #FAEEDA; color: #633806; }
+  .badge-sf { background: #E6F1FB; color: #0C447C; }
+  .source-stat { font-size: 22px; font-weight: 500; color: var(--color-text-primary); margin: 6px 0 4px; }
+  .source-quote { font-size: 12.5px; color: var(--color-text-secondary); line-height: 1.55; border-left: 2px solid var(--color-border-tertiary); padding-left: 10px; margin: 6px 0 0; }
+  .chart-wrap { position: relative; width: 100%; height: 260px; margin: 12px 0 4px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--color-text-secondary); margin-bottom: 1.5rem; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+  .takeaway-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem 1.25rem; margin-bottom: 8px; display: flex; gap: 12px; align-items: flex-start; }
+  .takeaway-icon { font-size: 18px; color: var(--color-text-secondary); flex-shrink: 0; margin-top: 1px; }
+  .takeaway-text { font-size: 13px; line-height: 1.55; color: var(--color-text-primary); }
+  .takeaway-text strong { font-weight: 500; }
+  .footnote { font-size: 11px; color: var(--color-text-tertiary); margin-top: 1.5rem; line-height: 1.6; }
+</style>
+
+<div class="brief">
+  <p class="section-label">Sources</p>
+
+  <div class="source-card">
+    <div class="source-header">
+      <div>
+        <div class="source-name">Houzz &amp; Home Study — annual, 22,000+ respondents</div>
+        <div class="source-meta">Houzz Inc. &nbsp;·&nbsp; 2023, 2024, 2025 editions &nbsp;·&nbsp; Largest published residential remodeling survey</div>
+      </div>
+      <span class="badge badge-confirm">Confirms</span>
+    </div>
+    <div class="source-stat">59%</div>
+    <div class="source-quote">Referrals from family and friends are the #1 source for finding a renovation pro. Websites and social media account for 38%; prior relationship with a contractor accounts for 30%.</div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-header">
+      <div>
+        <div class="source-name">Houzz Metro Report — San Francisco specific</div>
+        <div class="source-meta">Houzz Inc. &nbsp;·&nbsp; 2024 &nbsp;·&nbsp; Cut of national study across top 50 U.S. metros</div>
+      </div>
+      <span class="badge badge-sf">SF-specific</span>
+    </div>
+    <div class="source-stat">54%</div>
+    <div class="source-quote">SF leads the nation in the share of renovating homeowners who hire a general contractor — 54%, vs. the national average of 31%. SF also leads all metros in renovation spend.</div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-header">
+      <div>
+        <div class="source-name">Home Improvement Hiring Trends Study — HIRI</div>
+        <div class="source-meta">Home Innovation Research Institute &nbsp;·&nbsp; 2024 &nbsp;·&nbsp; Professional home services market</div>
+      </div>
+      <span class="badge badge-confirm">Confirms</span>
+    </div>
+    <div class="source-stat">2×</div>
+    <div class="source-quote">Homeowners are about twice as likely to find a service provider through a personal referral than via an online search. Nearly two-thirds prefer phone or in-person contact over digital booking.</div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-header">
+      <div>
+        <div class="source-name">Homeowner Roofing Survey — myCLEARopinion</div>
+        <div class="source-meta">Clear Seas Research &nbsp;·&nbsp; 2024 &nbsp;·&nbsp; Median HHI $100K–$149K, n=nationwide</div>
+      </div>
+      <span class="badge badge-confirm">Confirms</span>
+    </div>
+    <div class="source-stat">79%</div>
+    <div class="source-quote">Homeowners seek a contractor through word-of-mouth or recommendations (79%) before searching online (62%). Even when search is used, it typically validates a referral rather than originating it.</div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-header">
+      <div>
+        <div class="source-name">ACHR News / Reputation Igniter — online reviews behavior</div>
+        <div class="source-meta">ACHR News &nbsp;·&nbsp; 2024 &nbsp;·&nbsp; Contractor reputation and digital presence research</div>
+      </div>
+      <span class="badge badge-nuance">Nuance</span>
+    </div>
+    <div class="source-stat">91%</div>
+    <div class="source-quote">91% of homeowners check online reviews before hiring a contractor. The web doesn't replace referral — it validates it. A poor digital presence breaks the referral handoff.</div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-header">
+      <div>
+        <div class="source-name">CII Advisors — generational contractor hiring behavior</div>
+        <div class="source-meta">CII Advisors &nbsp;·&nbsp; 2024 &nbsp;·&nbsp; Homeowner trends for contractors</div>
+      </div>
+      <span class="badge badge-nuance">Nuance</span>
+    </div>
+    <div class="source-quote">Younger homeowners (Millennials and younger Gen X) increasingly prefer verified third-party reviews over word-of-mouth referrals. The referral-dominant pattern skews toward Boomers and older Gen X — still the primary buyers in the $1–5M project range.</div>
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">How homeowners discover contractors</p>
+
+  <div class="legend">
+    <span style="display:flex;align-items:center;gap:5px;"><span class="legend-dot" style="background:#378ADD;"></span>Referrals / word-of-mouth</span>
+    <span style="display:flex;align-items:center;gap:5px;"><span class="legend-dot" style="background:#1D9E75;"></span>Online search / websites</span>
+    <span style="display:flex;align-items:center;gap:5px;"><span class="legend-dot" style="background:#D85A30;"></span>Prior relationship</span>
+  </div>
+
+  <div class="chart-wrap">
+    <canvas id="discoveryChart" role="img" aria-label="Bar chart showing how homeowners find contractors across three studies. Referrals consistently rank first at 53–79%, online search second at 38–62%, prior relationship third at 30%.">
+      Referrals: 53–79%. Online search: 38–62%. Prior relationship: 30%.
+    </canvas>
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">What this means for Ashbury</p>
+
+  <div class="takeaway-card">
+    <i class="ti ti-check takeaway-icon" aria-hidden="true"></i>
+    <div class="takeaway-text"><strong>The statement holds.</strong> Every major source confirms referrals are the dominant first touchpoint — especially for higher-income homeowners in the Boomer and older Gen X bracket, which is Ashbury's core buyer for $1–5M projects.</div>
+  </div>
+
+  <div class="takeaway-card">
+    <i class="ti ti-alert-triangle takeaway-icon" aria-hidden="true"></i>
+    <div class="takeaway-text"><strong>The website is the second step, not optional.</strong> 91% of homeowners check online before hiring, even when referred. The site validates the referral — or kills it. Ashbury's current site creates risk at this handoff point.</div>
+  </div>
+
+  <div class="takeaway-card">
+    <i class="ti ti-map-pin takeaway-icon" aria-hidden="true"></i>
+    <div class="takeaway-text"><strong>SF is the highest-GC-hiring metro in the country.</strong> 54% of renovating SF homeowners hired a general contractor in 2024 — nearly double the national average. The market for exactly what Ashbury does is concentrated and active here.</div>
+  </div>
+
+  <div class="takeaway-card">
+    <i class="ti ti-users takeaway-icon" aria-hidden="true"></i>
+    <div class="takeaway-text"><strong>Younger buyers are different.</strong> Millennial homeowners in Pacific Heights increasingly rely on Yelp, Google Reviews, and Houzz reviews rather than personal referrals. This is where Ashbury's review absence is a liability — not just missed opportunity.</div>
+  </div>
+
+  <p class="footnote">Sources: Houzz &amp; Home Study (2023–2025) · Houzz Metro Report SF (2024) · HIRI Home Services Hiring Trends (2024) · myCLEARopinion Homeowner Roofing Study (2024) · ACHR News / Reputation Igniter (2024) · CII Advisors Homeowner Trends (2024). No source is specific to the $1–5M project tier; findings represent general homeowner behavior, weighted toward higher-income segments where specified.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+new Chart(document.getElementById('discoveryChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Houzz & Home Study\n(2023)', 'HIRI Hiring\nTrends (2024)', 'myCLEARopinion\nRoofing Study (2024)'],
+    datasets: [
+      {
+        label: 'Referrals / word-of-mouth',
+        data: [59, 50, 79],
+        backgroundColor: '#378ADD',
+        borderWidth: 0
+      },
+      {
+        label: 'Online search / websites',
+        data: [38, 25, 62],
+        backgroundColor: '#1D9E75',
+        borderWidth: 0
+      },
+      {
+        label: 'Prior relationship',
+        data: [30, null, null],
+        backgroundColor: '#D85A30',
+        borderWidth: 0
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => ctx.parsed.y != null ? ctx.dataset.label + ': ' + ctx.parsed.y + '%' : ''
+        }
+      }
+    },
+    scales: {
+      x: {
+        ticks: { font: { size: 12 }, color: '#888780', autoSkip: false },
+        grid: { display: false },
+        border: { display: false }
+      },
+      y: {
+        min: 0,
+        max: 100,
+        ticks: {
+          font: { size: 12 },
+          color: '#888780',
+          callback: (v) => v + '%'
+        },
+        grid: { color: 'rgba(136,135,128,0.15)' },
+        border: { display: false }
+      }
+    }
+  }
+});
+</script>
